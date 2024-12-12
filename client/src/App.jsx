@@ -8,7 +8,7 @@ function App() {
   const [dataMenu, setDataMenu] = useState([]);
 
   async function getData() {
-    const url = "http://localhost:3000/menu"; // Ganti URL dengan endpoint menu yang sesuai
+    const url = "https://deserted-omniscient-cornflower.glitch.me/menu"; // Ganti URL dengan endpoint menu yang sesuai
     try {
       const response = await fetch(url);
       if (!response.ok) {
