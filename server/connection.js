@@ -1,7 +1,8 @@
+require("dotenv").config();
 const { Pool } = require('pg');
 
 // URL Koneksi Supabase
-const connectionString = 'postgresql://postgres.xdjxvoqfmaetphdvuxas:6mWvZarzHaCDFxM4@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres';
+const connectionString = process.env.SUPABASE_DB_URL;
 
 // Buat pool dengan URL
 const pool = new Pool({
